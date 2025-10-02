@@ -1,0 +1,99 @@
+
+/* Reset + Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Container & Sections */
+.container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Counter */
+#counterValue {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin: 0.5rem 0;
+  color: #555;
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.faq-question:hover { background: #2980b9; }
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border: none;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover { background: #2980b9; }
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+#formMessage {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #1e1e1e;
+  color: #eee;
+}
+.dark-mode header {
+  background: #111;
+}
+.dark-mode .content {
+  background: #333;
+  color: #eee;
+}

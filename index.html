@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Interactivity Demo</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main class="container">
+   
+    <section class="content">
+      <h2>Counter Game</h2>
+      <p>Click the button to increase your score!</p>
+      <p id="counterValue">0</p>
+      <button id="incrementBtn">+ Increase</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    
+    <section class="content">
+      <h2>FAQ (Collapsible)</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript is a programming language that lets you make websites interactive.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is DOM?</button>
+        <p class="faq-answer">DOM (Document Object Model) is how JavaScript interacts with HTML elements.</p>
+      </div>
+    </section>
+
+
+    <section class="content">
+      <h2>Signup Form</h2>
+      <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <small class="error" id="emailError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ using JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
